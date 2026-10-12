@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Sargonofgilgamesh"
+            }
+        ],
+        "Category": "Miscellaneous",
+        "Description": "Shows a new Bible verse every day, offline, in several public-domain translations",
+        "Icon": "bookmarks",
+        "Id": "com.github.Sargonofgilgamesh.dailybibleverse",
+        "License": "GPL-2.0+",
+        "Name": "Daily Bible Verse",
+        "Version": "1.0.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

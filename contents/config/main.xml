@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+
+    <group name="General">
+        <!-- Translation id from contents/code/translations.js.
+             Empty: follow the system language. -->
+        <entry name="translation" type="String">
+            <default></default>
+        </entry>
+        <!-- Theme id from tools/themes.txt (for example "hope").
+             Empty: the list of 366 daily verses. -->
+        <entry name="theme" type="String">
+            <default></default>
+        </entry>
+        <!-- Translation id of a second translation shown under the first.
+             Empty: none. -->
+        <entry name="secondTranslation" type="String">
+            <default></default>
+        </entry>
+    </group>
+
+    <group name="Appearance">
+        <!-- Font and text -->
+        <entry name="useThemeColors" type="Bool">
+            <default>false</default>
+        </entry>
+        <!-- Empty: the Plasma default font. A font that is not installed
+             falls back to the system font. -->
+        <entry name="fontFamily" type="String">
+            <default>Red Hat Mono</default>
+        </entry>
+        <!-- Weight of the verse font when "bold" is off: 100 (thin) to 900
+             (black), 400 is regular, 500 medium. -->
+        <entry name="fontWeight" type="Int">
+            <default>400</default>
+        </entry>
+        <!-- Font sizes in points. -->
+        <entry name="fontSize" type="Int">
+            <default>14</default>
+        </entry>
+        <entry name="referenceFontSize" type="Int">
+            <default>10</default>
+        </entry>
+        <entry name="verseBold" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="verseItalic" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="referenceBold" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="referenceItalic" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="textColor" type="Color">
+            <default>#ffffff</default>
+        </entry>
+        <entry name="referenceColor" type="Color">
+            <default>#e0e0e0</default>
+        </entry>
+        <!-- 0 left, 1 center, 2 right -->
+        <entry name="textAlignment" type="Int">
+            <default>1</default>
+        </entry>
+        <!-- Line height in percent of the font's normal line height. -->
+        <entry name="lineSpacing" type="Int">
+            <default>100</default>
+        </entry>
+        <!-- Extra pixels between letters; may be negative. -->
+        <entry name="letterSpacing" type="Int">
+            <default>0</default>
+        </entry>
+        <!-- Size of the second translation in percent of the verse size. -->
+        <entry name="secondFontScale" type="Int">
+            <default>85</default>
+        </entry>
+
+        <!-- Background -->
+        <!-- 0 none, 1 Plasma standard, 2 Plasma translucent, 3 custom color -->
+        <entry name="backgroundMode" type="Int">
+            <default>1</default>
+        </entry>
+        <entry name="backgroundColor" type="Color">
+            <default>#000000</default>
+        </entry>
+        <!-- Percent, 0 to 100. -->
+        <entry name="backgroundOpacity" type="Int">
+            <default>60</default>
+        </entry>
+        <!-- Pixels. -->
+        <entry name="cornerRadius" type="Int">
+            <default>12</default>
+        </entry>
+
+        <!-- Text effects -->
+        <entry name="shadowEnabled" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="shadowColor" type="Color">
+            <default>#000000</default>
+        </entry>
+        <!-- Percent, 0 to 100. -->
+        <entry name="shadowBlur" type="Int">
+            <default>50</default>
+        </entry>
+        <!-- Pixels, applied to the right and downwards. -->
+        <entry name="shadowOffset" type="Int">
+            <default>2</default>
+        </entry>
+        <entry name="outlineEnabled" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="outlineColor" type="Color">
+            <default>#000000</default>
+        </entry>
+        <!-- Fade when the verse or the translation changes. -->
+        <entry name="fadeOnChange" type="Bool">
+            <default>true</default>
+        </entry>
+
+        <!-- Layout -->
+        <entry name="showReference" type="Bool">
+            <default>true</default>
+        </entry>
+        <!-- 0 below the verse, 1 above the verse, 2 inline after the verse -->
+        <entry name="referencePosition" type="Int">
+            <default>0</default>
+        </entry>
+        <!-- 0 left, 1 center, 2 right -->
+        <entry name="referenceAlignment" type="Int">
+            <default>1</default>
+        </entry>
+        <!-- Pixels. 0: use the full widget width. -->
+        <entry name="maxTextWidth" type="Int">
+            <default>0</default>
+        </entry>
+        <!-- Pixels between the widget edge and the text. -->
+        <entry name="padding" type="Int">
+            <default>16</default>
+        </entry>
+        <entry name="quotationMarks" type="Bool">
+            <default>false</default>
+        </entry>
+        <!-- Dash before a reference shown above or below the verse. -->
+        <entry name="referenceDash" type="Bool">
+            <default>false</default>
+        </entry>
+    </group>
+</kcfg>
